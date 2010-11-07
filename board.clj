@@ -2,13 +2,13 @@
 
 (defn make-neighbors
   ([size]
-    (list (for [neighbors (range size)] :dead))
+    (for [neighbors (range size)] :dead)
   )
 )
 
 (defn make-board
   ([size]
-    (list (for [cells (range (* size size))] (make-neighbors size)))
+    (for [cells (range (* size size))] (make-neighbors size))
   )
 )
 
